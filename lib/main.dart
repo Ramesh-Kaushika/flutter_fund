@@ -489,54 +489,127 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.amber[900],
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 450,
-                decoration: BoxDecoration(
-                  color: Colors.amber[300],
-                  borderRadius: BorderRadius.circular(20),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  width: double.infinity,
+                  height: 450,
+                  decoration: BoxDecoration(
+                    color: Colors.amber[300],
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text("User Interfaces with Flutter"),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 255, 0, 208),
+                                borderRadius: BorderRadius.circular(20)),
+                          ),
+                          const SizedBox(
+                            height: 200,
+                          ),
+                          Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 255, 0, 208),
+                                borderRadius: BorderRadius.circular(20)),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text("User Interfaces with Flutter"),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    const Text(
-                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 255, 0, 208),
-                              borderRadius: BorderRadius.circular(20)),
+                const SizedBox(
+                        height: 20,
+                      ),
+                Container(
+                  height: 450,
+                  decoration: BoxDecoration(
+                    color: Colors.amber[300],
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    children: [
+                      const Row(
+                        children: [
+                          Text("open-source"),
+                          Icon(Icons.abc_outlined)
+                        ],
+                      ),
+                      const Text(
+                          "Flutter is an open-source UI (User Interface) software development kit created by Google.Flutter is an open-source UI (User Interface) software development kit created by Google."),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 350,
+                        height: 250,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 255, 0, 208),
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                         const SizedBox(
-                          height: 200,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            const Text("open-source"),
+                            const Text(
+                                "Flutter is an open-source UI (User Interface) software development kit created by Google.Flutter is an open-source UI (User Interface) software development kit created by Google."),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    color: Colors.amber
+                                  ),
+                                ),
+                                Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    color: Colors.amber
+                                  ),
+                                ),
+                                Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    color: Colors.amber
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
-                        Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 255, 0, 208),
-                              borderRadius: BorderRadius.circular(20)),
-                        ),
-                      ],
-                    )
-                  ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
