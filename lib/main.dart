@@ -211,6 +211,172 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: "Layout 04",
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         backgroundColor: Colors.green[200],
+//         appBar: AppBar(
+//           backgroundColor: Colors.blue[300],
+//           title: const Text("Layout 04"),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 10),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                   height: 150,
+//                   color: Colors.yellow,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     children: [
+//                       Container(
+//                         width: 180,
+//                         height: 150,
+//                         decoration: BoxDecoration(
+//                           borderRadius: BorderRadius.circular(20),
+//                           color: Colors.blue,
+//                         ),
+//                       ),
+//                       Column(
+//                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                         children: [
+//                           Container(
+//                             width: 180,
+//                             height: 70,
+//                             decoration: BoxDecoration(
+//                               borderRadius: BorderRadius.circular(20),
+//                               color: Colors.blue,
+//                             ),
+//                           ),
+//                           Container(
+//                             width: 180,
+//                             height: 70,
+//                             decoration: BoxDecoration(
+//                               borderRadius: BorderRadius.circular(20),
+//                               color: Colors.blue,
+//                             ),
+//                           ),
+//                         ],
+//                       ),
+//                     ],
+//                   )),
+//               Container(
+//                 height: 150 / 2,
+//                 color: Colors.yellow,
+//               ),
+//               Container(
+//                 height: 150 / 2,
+//                 color: Colors.yellow,
+//               ),
+//               Container(
+//                 height: 300,
+//                 color: Colors.yellow,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween
+//                   ,
+//                   children: [
+//                     Container(
+//                       width: 180,
+//                       height: 300,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(20),
+//                         color: Colors.blue,
+//                       ),
+//                     ),
+//                     Column(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Container(
+//                           width: 180,
+//                           height: 70,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(20),
+//                             color: Colors.blue,
+//                           ),
+//                         ),
+//                         Container(
+//                           width: 180,
+//                           height: 70,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(20),
+//                             color: Colors.blue,
+//                           ),
+//                         ),
+//                         Container(
+//                           width: 180,
+//                           height: 70,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(20),
+//                             color: Colors.blue,
+//                           ),
+//                         ),
+//                       ],
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                 height: 155 / 2,
+//                 color: Colors.yellow,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                   children: [
+//                     Container(
+//                        width: 80,
+//                           height: 80,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(100),
+//                             color: Colors.blue,
+//                           ),
+//                     ),
+//                     Container(
+//                        width: 80,
+//                           height: 80,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(100),
+//                             color: Colors.blue,
+//                           ),
+//                     ),
+//                     Container(
+//                        width: 80,
+//                           height: 80,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(100),
+//                             color: Colors.blue,
+//                           ),
+//                     ),
+//                     Container(
+//                        width: 80,
+//                           height: 80,
+//                           decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(100),
+//                             color: Colors.blue,
+//                           ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -223,149 +389,76 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Layout 04",
       debugShowCheckedModeBanner: false,
+      title: "Layout 05",
       home: Scaffold(
-        backgroundColor: Colors.green[200],
         appBar: AppBar(
-          backgroundColor: Colors.blue[300],
-          title: const Text("Layout 04"),
+          backgroundColor: Colors.red,
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                  height: 150,
-                  color: Colors.yellow,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.blue,
-                        ),
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            width: 180,
-                            height: 70,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.blue,
-                            ),
-                          ),
-                          Container(
-                            width: 180,
-                            height: 70,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.blue,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  )),
-              Container(
-                height: 150 / 2,
-                color: Colors.yellow,
-              ),
-              Container(
-                height: 150 / 2,
-                color: Colors.yellow,
-              ),
-              Container(
-                height: 300,
-                color: Colors.yellow,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween
-                  ,
+                padding: const EdgeInsets.all(20),
+                height: 350,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.amber[300],
+                ),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      width: 180,
-                      height: 300,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.blue,
-                      ),
+                    Text(
+                      "User Interfaces with Flutter",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: 180,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.blue,
-                          ),
-                        ),
-                        Container(
-                          width: 180,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.blue,
-                          ),
-                        ),
-                        Container(
-                          width: 180,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.blue,
-                          ),
-                        ),
-                      ],
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+                      textAlign: TextAlign.start,
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                     )
                   ],
                 ),
               ),
               Container(
-                height: 155 / 2,
-                color: Colors.yellow,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                padding: const EdgeInsets.all(20),
+                height: 350,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.green[300],
+                ),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                       width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.blue,
-                          ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "User Interfaces with Flutter",
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                        Icon(Icons.bookmark)
+                      ],
                     ),
-                    Container(
-                       width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.blue,
-                          ),
+                    SizedBox(
+                      height: 15,
                     ),
-                    Container(
-                       width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.blue,
-                          ),
-                    ),
-                    Container(
-                       width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Colors.blue,
-                          ),
-                    ),
+                    Text(
+                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+                      textAlign: TextAlign.start,
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+                    )
                   ],
                 ),
               ),
