@@ -618,6 +618,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:my_firstapp/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -628,20 +629,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "App 01",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.black,
-        appBar: AppBar(
-          title: const Text("App 01"),
-          backgroundColor: Colors.orange[900],
-          leading: const Icon(
-            Icons.menu,
-            size: 30,
-          ),
-        ),
-      ),
+      home: HomePageWid()
     );
   }
 }
