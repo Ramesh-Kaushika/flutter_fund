@@ -377,6 +377,99 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "Layout 05",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Colors.red,
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 20),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 height: 350,
+//                 width: double.infinity,
+//                 decoration: BoxDecoration(
+//                   borderRadius: BorderRadius.circular(20),
+//                   color: Colors.amber[300],
+//                 ),
+//                 child: const Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       "User Interfaces with Flutter",
+//                       style:
+//                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+//                     ),
+//                     SizedBox(
+//                       height: 15,
+//                     ),
+//                     Text(
+//                       '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+//                       textAlign: TextAlign.start,
+//                       style:
+//                           TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 height: 350,
+//                 width: double.infinity,
+//                 decoration: BoxDecoration(
+//                   borderRadius: BorderRadius.circular(20),
+//                   color: Colors.green[300],
+//                 ),
+//                 child: const Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Row(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Text(
+//                           "User Interfaces with Flutter",
+//                           style: TextStyle(
+//                               fontSize: 18, fontWeight: FontWeight.bold),
+//                         ),
+//                         Icon(Icons.bookmark)
+//                       ],
+//                     ),
+//                     SizedBox(
+//                       height: 15,
+//                     ),
+//                     Text(
+//                       '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+//                       textAlign: TextAlign.start,
+//                       style:
+//                           TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+//                     )
+//                   ],
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -389,75 +482,56 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Layout 07",
       debugShowCheckedModeBanner: false,
-      title: "Layout 05",
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.amber[900],
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 padding: const EdgeInsets.all(20),
-                height: 350,
                 width: double.infinity,
+                height: 450,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
                   color: Colors.amber[300],
-                ),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "User Interfaces with Flutter",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
-                      textAlign: TextAlign.start,
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(20),
-                height: 350,
-                width: double.infinity,
-                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Colors.green[300],
                 ),
-                child: const Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    const Text("User Interfaces with Flutter"),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    const Text(
+                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          "User Interfaces with Flutter",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 255, 0, 208),
+                              borderRadius: BorderRadius.circular(20)),
                         ),
-                        Icon(Icons.bookmark)
+                         const SizedBox(
+                          height: 200,
+                        ),
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 255, 0, 208),
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
                       ],
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      '''In Flutter, the user interface is represented as a tree of widgets,commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
-                      textAlign: TextAlign.start,
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                     )
                   ],
                 ),
