@@ -42,6 +42,62 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "Layout 02",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: const Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 20),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                 width: double.infinity,
+//                 height: 175,
+//                 color: const Color(0xff06FFA5),
+//               ),
+//               Container(
+//                 width: double.infinity,
+//                 height: 175,
+//                 color: const Color(0xff06FFA5),
+//               ),
+//               Row(
+//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                 children: [
+//                   Container(
+//                     width: 175,
+//                     height: 350,
+//                     color: const Color(0xffFFE500),
+//                   ),
+//                   Container(
+//                     width: 175,
+//                     height: 350,
+//                     color: const Color(0xffFFE500),
+//                   )
+//                 ],
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -54,8 +110,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Layout 03",
       debugShowCheckedModeBanner: false,
-      title: "Layout 02",
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: const Color(0xff9E00FF),
@@ -65,30 +121,87 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                width: double.infinity,
-                height: 175,
-                color: const Color(0xff06FFA5),
-              ),
-              Container(
-                width: double.infinity,
-                height: 175,
-                color: const Color(0xff06FFA5),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
+                    height: 175,
                     width: 175,
-                    height: 350,
-                    color: const Color(0xffFFE500),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color(0xff06FFA5),
+                    ),
                   ),
                   Container(
+                    height: 175,
                     width: 175,
-                    height: 350,
-                    color: const Color(0xffFFE500),
-                  )
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color(0xff06FFA5),
+                    ),
+                  ),
                 ],
+              ),
+              Container(
+                height: 175,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xff06FFA5),
+                ),
+              ),
+              SizedBox(
+                height: 300,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 120,
+                          width: 175,
+                          decoration: const BoxDecoration(
+                            color: Color(0xffFFE500),
+                          ),
+                        ),
+                        Container(
+                          height: 150,
+                          width: 175,
+                          decoration: const BoxDecoration(
+                            color: Color(0xff06FFA5),
+                          ),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 175,
+                          decoration: const BoxDecoration(
+                            color: Color.fromARGB(255, 0, 55, 255),
+                          ),
+                        ),
+                        Container(
+                          height: 90,
+                          width: 175,
+                          decoration: const BoxDecoration(
+                            color: Color(0xff9E00FF),
+                          ),
+                        ),
+                        Container(
+                          height: 90,
+                          width: 175,
+                          decoration: const BoxDecoration(
+                            color: Color.fromARGB(255, 146, 104, 172),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
