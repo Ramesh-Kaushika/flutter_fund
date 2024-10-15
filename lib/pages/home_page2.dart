@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_firstapp/pages/widgets/search_bar.dart';
 import 'package:my_firstapp/widgets/app_bar_wid.dart';
+import 'package:my_firstapp/widgets/com_cont.dart';
 
 class AppBarWid extends StatelessWidget {
   const AppBarWid({super.key});
@@ -12,14 +14,19 @@ class AppBarWid extends StatelessWidget {
         title: appBarTitleWid,
         actions: appBarActions,
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              width: double.infinity,
-              height: 100,
-              color: Colors.black,
+            SearchBarWid(),
+            SizedBox(
+              height: 10,
             ),
+            Text("Explore Categories"),
+            Row(
+              children: [
+                CommonContWid(title: 'Ramesh', desc: 'Kaushika', )
+              ],
+            )
           ],
         ),
       ),
