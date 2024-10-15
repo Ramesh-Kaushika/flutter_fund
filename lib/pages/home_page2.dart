@@ -12,6 +12,17 @@ class AppBarWid extends StatelessWidget {
         title: appBarTitleWid,
         actions: appBarActions,
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              height: 100,
+              color: Colors.black,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
