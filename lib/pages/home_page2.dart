@@ -83,8 +83,10 @@ class AppBarWid extends StatelessWidget {
                 height: 10,
               ),
               const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  AddContWid()
+                  AddContWid(),
+                  AddContWid(),
                 ],
               )
             ],
