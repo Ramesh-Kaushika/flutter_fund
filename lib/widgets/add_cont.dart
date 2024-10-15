@@ -24,16 +24,36 @@ class AddContWid extends StatelessWidget {
             "Washing Liquid",
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
-          const Row(
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                "220 ml",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+              const Column(
+                children: [
+                  Text(
+                    "220 ml",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  Text(
+                    "230\$",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ],
               ),
-              Text(
-                "230",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
+              Container(
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 3,
+                  )
+                ),
+                child: const Center(
+                  child: Icon(Icons.add, color: Colors.white,),
+                ),
+              )
+
             ],
           )
         ],
