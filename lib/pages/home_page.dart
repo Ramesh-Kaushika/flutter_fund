@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_firstapp/widgets/long_cont.dart';
 import 'package:my_firstapp/widgets/small_cont.dart';
 
 class HomePageWid extends StatelessWidget {
@@ -66,8 +67,27 @@ class HomePageWid extends StatelessWidget {
                   ),
                   SmallCont(
                     title: 'Widget Tree',
-                    desc: 'In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree',
+                    desc:
+                        'In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree',
                   ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const LongCont(),
+              const SizedBox(
+                height: 20,
+              ),
+              const LongCont(),
+               const SizedBox(
+                height: 20,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SmallCont(title: "title", desc: "desc"),
+                  SmallCont(title: "title", desc: "desc")
                 ],
               )
             ],
