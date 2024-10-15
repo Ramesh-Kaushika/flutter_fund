@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_firstapp/widgets/long_cont.dart';
 import 'package:my_firstapp/widgets/small_cont.dart';
+import 'package:my_firstapp/widgets/social_wid.dart';
 
 class HomePageWid extends StatelessWidget {
   const HomePageWid({super.key});
@@ -80,7 +81,7 @@ class HomePageWid extends StatelessWidget {
                 height: 20,
               ),
               const LongCont(),
-               const SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               const Row(
@@ -99,12 +100,49 @@ class HomePageWid extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Flutter Blocks App", 
-                    style: TextStyle(
-                      color: Colors.white, 
-                      fontSize: 20,
+                    Text(
+                      "Flutter Blocks App",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015 and has gained significant popularity among developers due to its fast development cycle, expressive and flexible UI components, and excellent performance.",
+                      style: TextStyle(
+                        color: Color(0xff3B3636),
+                        fontSize: 20,
+                      ),
                     )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 20, right: 20, bottom: 50),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SocialWid(
+                      socialIcon: Icons.facebook,
+                    ),
+                    SocialWid(
+                      socialIcon: Icons.access_alarm,
+                    ),
+                    SocialWid(
+                      socialIcon: Icons.social_distance,
+                    ),
+                    SocialWid(
+                      socialIcon: Icons.sports_gymnastics,
+                    ),
+                    SocialWid(
+                      socialIcon: Icons.sports_gymnastics_sharp,
+                    ),
                   ],
                 ),
               )
