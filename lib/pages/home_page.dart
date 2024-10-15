@@ -89,6 +89,24 @@ class HomePageWid extends StatelessWidget {
                   SmallCont(title: "title", desc: "desc"),
                   SmallCont(title: "title", desc: "desc")
                 ],
+              ),
+              //footer
+              const SizedBox(
+                height: 20,
+              ),
+              const SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Flutter Blocks App", 
+                    style: TextStyle(
+                      color: Colors.white, 
+                      fontSize: 20,
+                    ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
