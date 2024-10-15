@@ -39,28 +39,35 @@ class HomePageWid extends StatelessWidget {
                 height: 300,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    color: Colors.amber, 
-                    borderRadius: BorderRadius.circular(20),
-                    ),
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(20),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                      '''In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
-                      ),
+                    '''In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree.Each widget in the tree corresponds to a specific UI component, and the arrangement of these widgets defines the layout and appearance of the app.By understanding the widget tree, you can efficiently organize your UI components and create a seamless user experience.''',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
-                  height: 20,
+                height: 20,
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SmallCont(),
-                  SmallCont(),
+                  SmallCont(
+                    title: "open-source",
+                    desc:
+                        "Flutter is an open-source UI (User Interface) software development kit created by Google.",
+                  ),
+                  SmallCont(
+                    title: 'Widget Tree',
+                    desc: 'In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree',
+                  ),
                 ],
               )
             ],

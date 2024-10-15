@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SmallCont extends StatelessWidget {
-  const SmallCont({super.key});
+  final String title;
+  final String desc;
+
+  const SmallCont({super.key, required this.title, required this.desc});
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +15,10 @@ class SmallCont extends StatelessWidget {
         color: Colors.purple,
         borderRadius: BorderRadius.circular(20),
       ),
-      child: const Column(
+      child: Column(
         children: [
-          Text("open-source"),
-          Text(
-              'Flutter is an open-source UI (User Interface) software development kit created by Google.')
+          Text(title),
+           Text(desc)
         ],
       ),
     );
