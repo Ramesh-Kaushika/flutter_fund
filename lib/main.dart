@@ -637,10 +637,8 @@
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
-import 'package:my_firstapp/pages/category_page/category_page.dart';
-
+import 'package:my_firstapp/pages/product_det_page/product_det.dart';
 
 void main() {
   runApp(const MyApp());
@@ -655,7 +653,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "App 02",
       // home: AppBarWid()
-      home: CategoryPageWid(),
+      // home: CategoryPageWid(),
+      home: ProductDetails(),
     );
   }
 }

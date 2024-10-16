@@ -30,6 +30,7 @@ class RevCard extends StatelessWidget {
               const ItemDesc(),
               const ItemDesc(),
               const ItemDesc(),
+              const ItemDesc(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
