@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_firstapp/pages/widgets/shared/notification_card.dart';
 import 'package:my_firstapp/widgets/cat_wid.dart';
+import 'package:my_firstapp/widgets/rev_card.dart';
 
 class CategoryPageWid extends StatelessWidget {
   const CategoryPageWid({super.key});
@@ -59,7 +60,7 @@ class CategoryPageWid extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                       CatWid(
+                      CatWid(
                         title: 'Vegetables &\n Fruits',
                         description: '20+ more ...',
                         circleColor: Color(0xff0E00AC),
@@ -83,7 +84,12 @@ class CategoryPageWid extends StatelessWidget {
                     ],
                   )
                 ],
-              )
+              ),
+              Text(
+                "Selected Items",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              RevCard(),
             ],
           ),
         ),
