@@ -637,10 +637,10 @@
 //   }
 // }
 
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:my_firstapp/pages/category_page/category_page.dart';
-import 'package:my_firstapp/pages/home_page2.dart';
+
 
 void main() {
   runApp(const MyApp());
